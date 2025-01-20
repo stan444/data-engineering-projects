@@ -1,4 +1,4 @@
-# Projet d'Analyse YouTube de Données par Darshil Parmar
+# Projet d'Analyse YouTube de Données par Stanislas Bicaba
 
 ## Introduction
 Ce projet vise à gérer en toute sécurité, rationaliser et effectuer des analyses sur les données structurées et semi-structurées des vidéos YouTube, en se basant sur les catégories de vidéos et les métriques de tendance.
