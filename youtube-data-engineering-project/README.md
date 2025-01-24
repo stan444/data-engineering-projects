@@ -58,6 +58,8 @@ Ce jeu de données Kaggle contient des statistiques (fichiers CSV) sur les vidé
 
 [Jeu de données Kaggle](https://www.kaggle.com/datasets/datasnaek/youtube-new)
 
+## Data Model
+
 ## Diagramme d'Architecture
 ![Diagramme d'Architecture](architecture.jpeg)
 
@@ -94,6 +96,94 @@ Ce graphique montre la répartition des vues par région (États-Unis, Royaume-U
 ![Somme des Vues par Région](sumofview_by_rg.jpg)
 
 ---
+
+## **Graphique 4 : Taux d'engagement par chaîne**
+Ce graphique montre le taux d'engagement (somme) pour différentes chaînes YouTube.
+La chaîne zefrank1 a le taux d'engagement le plus élevé, suivie par Team Coco et Shawn Mendes.
+Il y a une grande disparité dans le taux d'engagement entre les premières chaînes et celles en bas du classement, ce qui peut indiquer que certaines chaînes génèrent beaucoup plus d'interactions (likes, commentaires, etc.) par rapport aux autres.
+
+![Taux d'engagement par chaîne](engagement_rate_by_channel.jpg)
+
+---
+## **Graphique 5 : Video avec le plus de vue au Canada**
+Vidéo gagnante : "SAD!" de XXXTENTACION, avec 463,789 likes.
+Deuxième vidéo : "Are we ready to get married?", avec 439,333 likes (+5.57% de croissance).
+Cette vidéo spécifique de XXXTENTACION est la plus populaire au Canada en termes de likes.
+La deuxième vidéo montre une croissance significative de likes, ce qui indique une popularité croissante.
+
+![Video avec le plus de vue au Canada](mostlikedvideo_ca.jpg)
+
+---
+## **Graphique 6 : Video avec le plus de vue en grande Bretagne**
+Vidéo gagnante : "Logan Paul", avec 1,475,306 likes.
+Deuxième vidéo : "SAD!" de XXXTENTACION, avec 1,348,854 likes (+9.37% de croissance).
+Logan Paul a un énorme succès au Royaume-Uni, mais la vidéo de XXXTENTACION suit de près avec une croissance encore plus rapide.
+
+![Video avec le plus de vue en grande Bretagne](mostlikedvideo_gb.jpg)
+
+---
+
+## **Graphique 6 : Video avec le plus de vue au US**
+Vidéo gagnante : "Are we ready to get married?", avec 494,130 likes.
+Deuxième vidéo : "Earth Day 2018 Google Doodle", avec 408,461 likes (+20.97% de croissance).
+Les vidéos émotionnelles ou thématiques, comme "Are we ready to get married?" et "Earth Day 2018", ont un fort impact sur le public américain.
+La croissance importante de la deuxième vidéo pourrait indiquer une tendance vers des contenus thématiques ou éducatifs.
+
+![Video avec le plus de vue au US](mostlikedvideo_us.jpg)
+
+---
+
+## **Graphique 7: Video avec le meilleur ration like/dislike**
+Vidéo gagnante : "Farewell.", avec un ratio de 62,695.63.
+Deuxième vidéo : "Jay Park X Yultron - Forget About Tomorrow", avec un ratio de 62,177.79 (+0.83% de croissance).
+La vidéo "Farewell." a le ratio likes/dislikes le plus élevé, ce qui montre qu'elle est largement appréciée sans générer beaucoup de réactions négatives.
+La deuxième vidéo montre une légère croissance dans son ratio, indiquant une réception positive constante.
+
+![video avec le meilleur ration like/dislike](ratio_like_dislike.jpg)
+
+---
+
+## **Graphique 8: nombre de videos par catégorie**
+Catégories dominantes :
+People & Blogs (Personnes & Blogs)
+Entertainment (Divertissement)
+Music (Musique)
+
+Catégories moins représentées :
+Nonprofits (Associations caritatives)
+Autos & Vehicles (Automobiles et Véhicules)
+
+Les catégories populaires comme "People & Blogs" et "Entertainment" montrent que les spectateurs s'intéressent principalement au contenu lié à la vie quotidienne et aux divertissements.
+Les catégories comme "Nonprofits" et "Autos & Vehicles" attirent un public de niche.
+Conclusion :
+Les créateurs qui souhaitent atteindre un large public devraient se concentrer sur les catégories populaires. Les catégories de niche peuvent néanmoins offrir des opportunités pour des audiences spécifiques.
+
+![nombre de videos par catégorie](video_by_cat.jpg)
+
+---
+
+## **Graphique 9 : temps en tendance des vidéos**
+"BEACH HOUSE" a la durée maximale avec environ 40 jours en tendance, ce qui la positionne comme la vidéo ayant le plus capté l'attention.
+Des vidéos comme "Tom Holland" et "The Hamilton" suivent avec des durées légèrement inférieures (approximativement 30-35 jours).
+Distribution des durées :
+
+La majorité des vidéos ont passé moins de 20 jours en tendance, ce qui est visible dans la décroissance progressive des barres.
+Seules quelques vidéos réussissent à dépasser les 30 jours en tendance, ce qui en fait des cas exceptionnels.
+Concentration des tendances :
+
+Les vidéos avec des durées longues (au-delà de 30 jours) pourraient indiquer une audience universelle, un contenu viral ou des sujets de forte actualité.
+Les vidéos avec une durée plus courte (< 10 jours) pourraient être liées à des niches spécifiques ou à un intérêt limité au fil du temps.
+Points d’analyse potentiels :
+
+![temps en tendance des vidéos](time_in_trending.jpg)
+
+## Scripts utilisés
+cleansed-csv-parquet.py
+s3_cli_command.sh
+lamba.py
+### ETL visuel 
+
+![ETL pour la final db analytique](final_analyticdb_etl.jpg)
 
 ## **Synthèse**
 Ces graphiques offrent des informations clés sur les préférences des spectateurs en termes de catégories et leur répartition géographique :
